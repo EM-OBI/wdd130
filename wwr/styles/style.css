@@ -1,11 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Red+Hat+Display&family=Roboto&family=Roboto+Serif:opsz@8..144&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
+
+body {
+    background-color: #e0afa0;
+    font-family: 'Roboto', 'Red Hat Display', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
 nav a {
     text-align: center;
     color: #e0afa0;
     text-decoration: none;
+    padding: 25px;
 }
 
 #hero-msg h1, #hero-msg h4 {
@@ -25,10 +41,6 @@ main section {
     background-color: #463f3a;
 }
 
-body {
-    background-color: #e0afa0;
-}
-
 header {
     background-color: #463f3a;
 
@@ -43,6 +55,10 @@ nav a:hover {
     background-color: #e0afa0;
     color: #463f3a;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -52,11 +68,15 @@ nav a:hover {
 
 .msg {
     background-color: #e0afa0;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 footer {
     background-color: #463f3a;
     color: #e0afa0;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a {
@@ -76,8 +96,19 @@ footer p a:hover {
     text-decoration: underline;
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+
 .home-title {
     color: #463f3a;
+    font-family: 'Playfair Display SC', 'Roboto Serif', serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+h2 {
+    margin: 0;
 }
 
 h4 {
@@ -90,8 +121,31 @@ h4 {
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img {
     width: 100%;
+}
+
+.msg h2 {
+    color: #463f3a;
+    font-family: 'Playfair Display SC', 'Roboto Serif', serif;
+}
+.msg p {
+    color: #463f3a;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #463f3a;
+}
+
+main section img {
+    box-sizing: border-box;
 }
