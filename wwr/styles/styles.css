@@ -246,12 +246,7 @@ main section img {
 .river_img {
     width: 500px;
     border: 10px solid #463f3a;
-    transition: width .5s;
     box-shadow: 5px 5px 10px #6f7364;
-}
-
-.river_img:hover {
-    width: 550px;
 }
 
 
