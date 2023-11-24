@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Fira+Sans&family=Roboto&family=Roboto+Slab&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #e8f8f0;
+    font-family: 'Fira Sans', 'Roboto', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+/* header css */
+
+header {
+    background-color: #011408;
+    display: grid;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    grid-template-columns: repeat(5, 20%);
+    align-items: center;
+    color: #e8f8f0;
+    height: 100px;
+    z-index: 1;
+}
+
+#logo_link img {
+    width: 100px;
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: center;
+    padding-left: 20px;
+}
+
+header h1 {
+    grid-column: 2/4;
+    /* color: #e8f8f0; */
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    grid-column: 4/6;
+    /* color: #e8f8f0; */
+}
+
+nav a {
+    color: #e8f8f0;
+    text-decoration: none;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #e8f8f0;
+    color: #011408;
+}
+
+/* slideshow css */
+
+
+
+/* main css */
+
+main {
+    margin-left: 200px;
+} 
+
+#sidebar {
+    color: #e8f8f0;
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    background-color: #011408;
+    text-align: left;
+    overflow-x: hidden;
+    margin-top: 100px;
+}
+
+
+#sidebar a {
+    color: #e8f8f0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 6px 8px 6px 16px;
+}
+
+#sidebar a:hover {
+    border: 3px solid #e8f8f0;
+    padding: 2px;
+}
+
+#sidebar .sidebar-header {
+    margin-left: 10px;
+}
+
+/* #home-slideshow {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 100px;
+    align-items: end;
+    justify-items: center;
+}
+
+#home-slideshow img {
+    width: 333px;
+} */
+
+.dental-dx, .bright-side {
+    /* display: grid;
+    justify-items: center; */
+    text-align: center;
+    padding: 30px;
+}
+
+.pd-overview, .pd-mf, .pd-ss, .pd-prevention, .pd-visit {
+    padding: 30px;
+}
+
+.pd-overview h4, .pd-mf h4, .pd-ss h4, .pd-prevention h4, .pd-visit h4 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.dental-dx h4, .bright-side h4 {
+    font-family: 'Bevan', 'Roboto Slab', serif;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    background-color: #011408;
+    color: #e8f8f0;
+    text-transform: uppercase;
+}
+
+
+/* footer css */
+footer {
+    background-color: #011408;
+    color: #e8f8f0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-left: 200px;
+}
+
+footer p a {
+    color: #e8f8f0;
+    text-decoration: none;
+    align-self: center;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+footer p a:hover {
+    background-color: #e8f8f0;
+    color: #011408;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.facebook, .twitter, .instagram {
+    border-radius: 5px;
+    transition: transform .5s;
+}
+
+.facebook:hover, .twitter:hover, .instagram:hover {
+    transform: scale(1.1);
+}
+
+/* Slideshow */
+
+#home-slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding-top: 120px;
+    /* z-index: -1; */
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    width: 450px;
+    margin: 0 auto;
+
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #011408;
+    font-size: 22px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: auto;
+    text-align: center;
+    font-family: 'Fira Sans', 'Roboto', sans-serif;;
+  }
+  
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
