@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="script.js"></script>
     <title>Periodontitis</title>
 </head>
 <body>
@@ -26,15 +27,27 @@
                 <div class="sidebar-content"><a href="./periodontitis.html">PERIODONTITIS</a></div>
         </aside>
         <main>
-            <div id="periodontitis-slideshow">
-                <div id="pd-slideshow-img">
-                    <img src="images/pd1.jpg" alt="gingival recession in periodontitis">
-                    <img src="images/pd2.jpg" alt="bone loss in periodontitis">
-                    <img src="images/pd3.jpg" alt="flossing">
-                </div>
-                <div id="pd-slideshow-text">
-                    <h2>PERIODONTITIS</h2>
-                </div>
+            <div id="home-slideshow">
+                <div class="mySlides fade">
+                    <img src="images/pd1.jpg" style="width:100%" alt="Periodontal Disease">
+                    <div class="text">Periodontal Disease</div>
+                  </div>
+                <div class="mySlides fade">
+                    <img src="images/pd2.jpg" style="width:100%" alt="Periodontal Disease">
+                    <div class="text">Periodontal Disease</div>
+                  </div>
+                <div class="mySlides fade">
+                    <img src="images/pd3.jpg" style="width:100%" alt="Periodontal Disease">
+                    <div class="text">Periodontal Disease</div>
+                  </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
             <section class="pd-overview">
                 <h4>Overview</h4>

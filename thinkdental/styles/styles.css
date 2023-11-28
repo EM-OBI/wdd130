@@ -106,33 +106,58 @@ main {
     margin-left: 10px;
 }
 
-/* #home-slideshow {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 100px;
-    align-items: end;
-    justify-items: center;
-}
-
-#home-slideshow img {
-    width: 333px;
-} */
 
 .dental-dx, .bright-side {
-    /* display: grid;
-    justify-items: center; */
     text-align: center;
-    padding: 30px;
+    padding: 10px;
 }
 
 .pd-overview, .pd-mf, .pd-ss, .pd-prevention, .pd-visit {
-    padding: 30px;
+    padding: 10px;
+    /* text-align: center; */
 }
 
 .pd-overview h4, .pd-mf h4, .pd-ss h4, .pd-prevention h4, .pd-visit h4 {
-    text-align: center;
+    font-family: 'Bevan', 'Roboto Slab', serif;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    background-color: #011408;
+    color: #e8f8f0;
     text-transform: uppercase;
+    text-align: center;
 }
+
+ul {
+    list-style: none;
+}
+
+.pd-ss, .pd-prevention, .pd-overview {
+    list-style-position: inside;
+}
+
+.td-overview, .td-mf, .td-ss, .td-prevention, .td-visit {
+    /* text-align: center; */
+    padding: 10px;
+}
+
+.td-ss, .td-prevention {
+    list-style-position: inside;
+}
+
+.td-overview h4, .td-mf h4, .td-ss h4, .td-prevention h4, .td-visit h4 {
+    font-family: 'Bevan', 'Roboto Slab', serif;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    background-color: #011408;
+    color: #e8f8f0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+}
+
 
 .dental-dx h4, .bright-side h4 {
     font-family: 'Bevan', 'Roboto Slab', serif;

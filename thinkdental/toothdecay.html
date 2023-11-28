@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="script.js"></script>
     <title>Tooth Decay</title>
 </head>
 <body>
@@ -26,17 +27,28 @@
               <div class="sidebar-content"><a href="./periodontitis.html">PERIODONTITIS</a></div>
       </aside>
       <main>
-          <div id="tooth-decay-slideshow">
-            <div id="td-slideshow-img">
-                <img src="images/dc3.jpg" alt="dental caries">
-                <img src="images/dc4.jpg" alt="pit and fissure sealing">
-                <img src="images/dc5.jpg" alt="toothache">
-                <img src="images/dc6.jpg" alt="dental caries">
+        <div id="home-slideshow">
+          <div class="mySlides fade">
+              <img src="images/dc1.jpg" style="width:100%" alt="Dental Caries">
+              <div class="text">Tooth Decay</div>
             </div>
-              <div id="td-slideshow-text">
-                <h2>TOOTH DECAY</h2>
-              </div>
-          </div>
+          <div class="mySlides fade">
+              <img src="images/dc2.jpg" style="width:100%" alt="Dental Caries">
+              <div class="text">Tooth Decay</div>
+            </div>
+          <div class="mySlides fade">
+              <img src="images/dc3.jpg" style="width:100%" alt="Dental Caries">
+              <div class="text">Tooth Decay</div>
+            </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
           <section class="td-overview">
               <h4>Overview</h4>
               <p>
